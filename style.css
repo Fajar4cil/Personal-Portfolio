@@ -1,0 +1,503 @@
+/* Mengatur warna latar belakang halaman */
+body {
+  background-color: #1e201e;
+  color: #9ec8b9; /* Agar teks terlihat di atas latar belakang gelap */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Membuat navbar menjadi transparan */
+.navbar {
+  padding: 0 15px;
+  background-color: transparent !important;
+  border: none; /* Menghapus garis tepi default */
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: #ffffff; /* Ubah warna teks untuk kontras dengan latar belakang */
+  padding: 10px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff !important; /* Warna teks putih */
+  transition: color 0.3s ease; /* Animasi halus saat hover */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #5c8374 !important; /* Warna teks saat hover */
+}
+
+.img-circle {
+  width: 250px; /* Ukuran yang lebih fleksibel */
+  height: 250px; /* Ukuran yang lebih fleksibel */
+  object-fit: cover; /* Memastikan gambar tetap terpotong rapi */
+  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+  border: 5px solid #9ec8b9; /* Warna dan ketebalan border */
+  filter: drop-shadow(2px 2px 20px #9ec8b9); /* Efek bayangan */
+  transition: filter 0.3s ease, transform 0.3s ease; /* Efek transisi hover */
+  margin-bottom: 20px; /* Menambahkan jarak bawah */
+}
+
+/* Hover untuk membuat gambar lebih cerah */
+.img-circle:hover {
+  filter: brightness(1.3) drop-shadow(4px 4px 30px #9ec8b9); /* Lebih cerah dan bayangan lebih intens */
+  transform: scale(1.05); /* Sedikit memperbesar untuk efek dinamis */
+}
+
+/* Membuat kontainer col-md-6 menggunakan Flexbox untuk menempatkan gambar di tengah */
+.d-flex {
+  display: flex;
+  justify-content: center; /* Memusatkan gambar secara horizontal */
+  align-items: center; /* Memusatkan gambar secara vertikal */
+  height: 100%; /* Pastikan kolom memiliki tinggi penuh */
+  padding: 20px; /* Menambahkan padding pada container */
+}
+
+h3 {
+  font-family: "Poppins", sans-serif; /* Font */
+  font-size: 35px; /* Ukuran font */
+  font-weight: 600; /* Ketebalan font */
+  color: #d3f1df; /* Warna font */
+}
+
+/* Menambahkan efek animasi typing pada seluruh teks dalam elemen dengan class 'typing' */
+.typing {
+  font-family: "Poppins", sans-serif; /* Font */
+  font-size: 35px; /* Ukuran font */
+  font-weight: 600; /* Ketebalan font */
+  color: #d3f1df; /* Warna font */
+  display: inline-block; /* Membuat teks terpisah dan mendukung animasi */
+  overflow: hidden; /* Menyembunyikan bagian teks yang belum tampil */
+  white-space: nowrap; /* Tidak membiarkan teks terpotong atau melompat baris */
+  border-right: 2px solid; /* Membuat efek kursor ketikan */
+  width: 0; /* Mulai dengan lebar 0 untuk menyembunyikan teks */
+  animation: typing 5s steps(30) 1s infinite, blinkCaret 0.75s step-end infinite; /* Menggunakan animasi mengetik pada seluruh teks dan kursor berkedip */
+}
+
+/* Animasi mengetik untuk seluruh teks */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%; /* Lebar menjadi penuh untuk menampilkan seluruh teks */
+  }
+}
+
+/* Animasi kursor berkedip */
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent; /* Menghilangkan warna border untuk efek berkedip */
+  }
+}
+
+/* Menambahkan efek gaya pada 'Web Developer' (jika ingin efek tambahan di bagian ini) */
+.web-developer {
+  color: #85a98f; /* Warna teks */
+  font-weight: bold; /* Ketebalan font */
+  font-family: "Poppins", sans-serif; /* Font */
+  display: inline-block; /* Membuat teks terpisah */
+}
+
+/* Mengubah warna tombol menjadi */
+.btn-primary {
+  background-color: #697565; /* Warna tombol */
+  border-color: #ecdfcc; /* Warna border tombol */
+  border-radius: 10px; /* Menambahkan sudut rounded */
+}
+
+/* Efek hover saat pengguna mengarahkan kursor */
+.btn-primary:hover {
+  background-color: #ecdfcc; /* Warna saat hover */
+  border-color: #697565; /* Warna border saat hover */
+}
+
+.cta:hover {
+  color: #1e201e; /* Ubah warna teks menjadi merah saat hover */
+}
+
+/* Menata tampilan ikon media sosial */
+.social-icons {
+  margin-top: 20px; /* Memberikan jarak antar elemen */
+}
+
+.social-icon {
+  text-decoration: none; /* Menghilangkan garis bawah */
+  display: inline-block; /* Menjadikan ikon tampil sejajar dengan margin */
+  font-size: 30px; /* Ukuran ikon */
+  color: #697565; /* Warna default ikon */
+  margin-right: 35px; /* Jarak antar ikon */
+  transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+.social-icon:hover {
+  color: #ecdfcc; /* Warna ikon saat hover */
+}
+
+/* Menambahkan padding untuk konten hero */
+.hero {
+  padding: 25px 0;
+}
+
+/*section about */
+.about {
+  padding: 25px 0;
+}
+
+.title {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  text-align: center; /* Memusatkan teks secara horizontal */
+  font-family: "Poppins", sans-serif; /* Font */
+  font-weight: bold; /* Memberikan penegasan */
+}
+
+.title span:not(.highlight) {
+  color: #ecdfcc; /* Warna khusus untuk teks Me */
+}
+
+.img2-circle {
+  width: 300px; /* Sesuaikan ukuran */
+  height: 300px; /* Sesuaikan ukuran */
+  object-fit: cover; /* Memastikan gambar tetap terpotong rapi */
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+  box-shadow: 0 6px 20px #ecdfcc; /* Efek bayangan */
+}
+
+.abouttext {
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif; /* Font */
+  font-size: 25px; /* Ukuran font */
+  font-weight: 600; /* Ketebalan font */
+  color: rgb(255, 255, 255); /* Warna font */
+}
+
+/* Timeline Container */
+.pendidikan {
+  padding: 50px 0;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  gap: 20px; /* Menambahkan jarak antar item timeline */
+  padding: 20px 10px; /* Padding agar lebih rapi */
+}
+
+/* Timeline Items */
+.timeline-item {
+  position: relative;
+  width: calc(33.333% - 20px);
+  margin: 10px 0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.timeline-item {
+  position: relative;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+  filter: brightness(1); /* Brightness default */
+}
+
+.timeline-item:hover {
+  transform: translateY(-10px); /* Gerakan hover */
+  filter: brightness(1.2); /* Membuat elemen lebih terang */
+  box-shadow: 0 4px 20px rgba(158, 200, 185, 0.6); /* Memberikan efek bayangan */
+  z-index: 2; /* Membawa elemen di atas elemen lainnya */
+}
+
+/* Garis Timeline */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -25px; /* Menyesuaikan garis ke kiri */
+  width: 10px;
+  height: 10px;
+  background-color: #697565; /* Warna garis */
+  border-radius: 50%;
+  z-index: 0;
+  transition: background-color 0.3s ease;
+}
+
+.timeline-item:hover::before {
+  background-color: #9ec8b9; /* Warna lebih terang pada garis saat hover */
+}
+
+/* Konten dalam Timeline */
+.timeline-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ikon dalam Timeline */
+.timeline-item .icon {
+  font-size: 50px; /* Ukuran ikon */
+  color: #9ec8b9; /* Warna ikon */
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.timeline-item:hover .icon {
+  color: #ffffff; /* Warna ikon berubah menjadi putih saat hover */
+}
+
+/* Heading */
+.timeline-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+}
+
+.timeline-item:hover h3 {
+  color: #9ec8b9; /* Warna heading berubah menjadi lebih terang saat hover */
+}
+
+/* Paragraph */
+.timeline-item p {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+}
+
+.timeline-item:hover p {
+  color: #d4f5e6; /* Warna teks lebih terang saat hover */
+}
+
+/* Tahun */
+.timeline-item .year {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #9ec8b9; /* Warna tahun default */
+  transition: color 0.3s ease;
+}
+
+.timeline-item:hover .year {
+  color: #ffffff; /* Warna tahun menjadi lebih mencolok saat hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-item {
+    width: 90%; /* Lebar item lebih besar di mobile */
+    margin-bottom: 30px; /* Memberikan jarak antar item */
+  }
+
+  .timeline-item::before {
+    display: none; /* Sembunyikan garis untuk tampilan mobile */
+  }
+}
+
+/* project */
+.projecttitle {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  text-align: center; /* Memusatkan teks secara horizontal */
+  font-family: "Poppins", sans-serif; /* Font */
+  font-weight: bold; /* Memberikan penegasan */
+}
+
+.projecttitle span:not(.highlight) {
+  color: #2596be; /* Warna khusus untuk teks Me */
+}
+
+/* Container untuk Project */
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px 10px; /* Mengurangi padding agar lebih responsif */
+}
+
+/* Container untuk setiap card */
+.card-container {
+  position: relative;
+  flex: 1 1 calc(33.333% - 20px); /* 3 card per baris dengan jarak antar card */
+  max-width: calc(33.333% - 20px); /* Menghindari card melebihi 33% */
+  box-sizing: border-box; /* Agar padding dan margin terhitung dalam lebar */
+}
+
+/* Gaya untuk card */
+.card {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Gaya gambar pada card */
+.card-img {
+  width: 100%; /* Lebar gambar 100% dari lebar card */
+  height: 100%; /* Tinggi gambar disesuaikan dengan tinggi card */
+  object-fit: cover; /* Gambar menyesuaikan tanpa terpotong, dengan menjaga proporsi */
+}
+
+/* Overlay yang menampilkan teks saat hover */
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparansi gelap */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Default: tersembunyi */
+  transform: translateY(100%); /* Overlay mulai di bawah */
+  transition: transform 0.5s ease, opacity 0.3s ease; /* Transisi transformasi dan opacity */
+}
+
+/* Menampilkan teks ketika card dihover */
+.card:hover .card-img-overlay {
+  transform: translateY(0); /* Overlay naik ke atas */
+  opacity: 1; /* Tampilkan overlay saat hover */
+}
+
+/* Teks yang muncul di overlay */
+.card-text {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Responsif: 2 card per baris untuk layar lebih kecil dari 992px */
+@media (max-width: 992px) {
+  .card-container {
+    flex: 1 1 calc(50% - 20px); /* 2 card per baris */
+    max-width: calc(50% - 20px); /* Menghindari card melebihi 50% */
+  }
+}
+
+/* Responsif: 1 card per baris untuk layar lebih kecil dari 768px */
+@media (max-width: 768px) {
+  .card-container {
+    flex: 1 1 100%; /* 1 card per baris */
+    max-width: 100%; /* Card mengisi 100% lebar */
+  }
+}
+
+/* contact */
+.contacttitle {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center; /* Memusatkan teks secara horizontal */
+  font-family: "Poppins", sans-serif; /* Font */
+  font-weight: bold; /* Memberikan penegasan */
+}
+
+.contacttitle span {
+  color: #2596be; /* Warna khusus untuk teks Me */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 250px; /* Atur sesuai kebutuhan */
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px; /* Memberi jarak antar input */
+  margin-top: 20px;
+}
+
+.input-icon i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #557c56;
+  font-size: 30px; /* Menambah ukuran ikon */
+}
+
+/* Mengubah warna teks dan jenis font pada input */
+.input-icon input {
+  padding-left: 50px; /* Memberikan ruang agar ikon tidak tumpang tindih dengan teks */
+  width: 100%;
+  height: 50px;
+  border: 1px solid #1e201e;
+  border-radius: 5px;
+  font-size: 23px;
+  font-family: "Poppins", sans-serif; /* Jenis font Poppins */
+  color: #ecdfcc; /* Warna teks di dalam input */
+  background-color: transparent; /* Background input transparan */
+}
+
+.input-icon input::placeholder {
+  color: rgb(255, 255, 255); /* Warna teks placeholder */
+}
+
+.containerfooter {
+  margin-top: 30px; /* Menambahkan jarak atas */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Agar teks dalam credit sejajar tengah */
+  padding: 20px 15px; /* Menambahkan padding untuk keseimbangan */
+}
+
+.social-footers {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.social-footer {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #697565;
+  transition: transform 0.3s, color 0.3s; /* Efek hover */
+}
+
+.social-footer:hover {
+  transform: scale(1.2); /* Membuat ikon lebih besar */
+  color: #ecdfcc; /* Warna ikon saat hover */
+}
+
+.links {
+  display: flex; /* Menampilkan elemen dalam satu baris */
+  gap: 30px; /* Menambahkan jarak antar link */
+  justify-content: center; /* Memposisikan link di tengah */
+  margin-bottom: 20px; /* Memberikan ruang di bawah section links */
+}
+
+.links a {
+  text-decoration: none; /* Menghapus garis bawah default */
+  color: #697565; /* Warna default link */
+  font-size: 18px; /* Ukuran teks */
+  transition: color 0.3s ease, transform 0.2s ease; /* Transisi efek hover */
+  margin-bottom: 10px; /* Menambah jarak antar link */
+}
+
+.links a:hover {
+  color: #ecdfcc; /* Warna link saat dihover */
+  transform: scale(1.1); /* Sedikit memperbesar link saat hover */
+  font-weight: bold; /* Menambahkan gaya tebal saat hover */
+}
+
+@media (max-width: 768px) {
+  .links {
+    flex-direction: column; /* Mengubah arah menjadi kolom pada layar kecil */
+    align-items: center;
+  }
+}
