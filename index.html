@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -23,15 +23,19 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <!-- AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <!-- Skrip JS AOS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- slick -->
+    <link rel="stylesheet" href="slick/slick/slick.css">
+    <link rel="stylesheet" href="slick/slick/slick-theme.css">
 
 
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="icon" href="img/me_icon.png" type="image/x-icon">
     <title>Personal Portfolio</title>
   </head>
   <body>
@@ -68,7 +72,7 @@
     <!-- Hero Section-->
     <div class="container">
       <section class="hero row align-items-center" id="home">
-        <!-- Kolom Pertama -->
+        
         <div class="col-md-6">
           <main class="content mb-4">
             <h4 data-aos="fade-down" class="mb-4">Hello it's Me</h4>
@@ -81,23 +85,21 @@
               semangat untuk belajar dan berkontribusi dalam industri IT. Saya
               telah belajar tentang pemrograman, basis data, dan sistem operasi.
             </p>
-            <!-- Menambahkan ikon media sosial dan email -->
+            
             <div data-aos="fade-right" class="social-icons">
               <a
-                href="https://www.instagram.com/username"
+                href="https://www.instagram.com/fajara.11"
                 class="social-icon"
                 target="_blank"
               >
                 <i class="fab fa-instagram"></i>
-                <!-- Ikon Instagram -->
               </a>
               <a
-                href="https://www.linkedin.com/in/username"
+                href="https://www.linkedin.com/in/agustianfjr/"
                 class="social-icon"
                 target="_blank"
               >
                 <i class="fab fa-linkedin"></i>
-                <!-- Ikon LinkedIn -->
               </a>
               <a
                 href="https://wa.me/yourphone"
@@ -105,18 +107,15 @@
                 target="_blank"
               >
                 <i class="fab fa-whatsapp"></i>
-                <!-- Ikon WhatsApp -->
               </a>
               <a href="mailto:your.email@example.com" class="social-icon">
                 <i class="fas fa-envelope"></i>
-                <!-- Ikon Email -->
               </a>
             </div>
             <a href="#about" data-aos="fade-up" data-aos-delay="50" class="cta btn btn-primary mt-4">See More</a>
           </main>
         </div>
 
-        <!-- Kolom Kedua -->
         <div class="col-md-6 d-flex justify-content-center align-items-center">
           <img
             src="../Portfolio/img/my-removebg-preview.png"
@@ -136,7 +135,7 @@
           <main class="content">
            <img
             src="../Portfolio/img/me.jpeg"
-            alt="Ngopi"
+            alt="me"
             class="img-fluid img2-circle"
           />
             
@@ -144,15 +143,15 @@
         <div class="col-md-6 ">
           <main class="content">
             <h3 data-aos="fade-right" class="abouttext">Web Developer</h3>
-            <!-- <h3 class="typing mb-4">
-              And I'm a <span class="web-developer">Web Developer</span>
-            </h3> -->
             <p data-aos="fade-right">
-              Saya seorang lulusan baru di bidang Teknik Informatika dengan
-              semangat untuk belajar dan berkontribusi dalam industri IT. Saya
-              telah belajar tentang pemrograman, basis data, dan sistem operasi.
+             Lulusan Baru dari Politeknik TEDC Bandung jurusan Teknik Informatika dengan pengalaman 
+              magang selama 3 bulan sebagai Programmer di PT Diantara Intermedia. 
             </p>
-
+            <p data-aos="fade-right">
+             Selama magang, 
+              tergabung dalam tim Web Developer dan aktif berpartisipasi dalam tahapan scrum. Terbiasa 
+              menggunakan komputer dan Microsoft Office untuk menyusun laporan dan presentasi. 
+            </p>
              <p data-aos="fade-right">
               Saya seorang lulusan baru di bidang Teknik Informatika dengan
               semangat untuk belajar dan berkontribusi dalam industri IT. Saya
@@ -163,53 +162,86 @@
           </main>     
         </div>
       </section>
+      <h3 data-aos="fade-down" class="abouttext text-center">My Skills</h3>
+        <div class="mt-1 slider">
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="testi-card mx-4 my-3 text-center p-4">
+            <img src="img/html.png" alt="" class="img-fluid d-inline-block" style="width: 50px; height: 50px; border-radius: 50%;">
+            <blockquote class="blockquote mt-3">HTML</blockquote>
+          </div>
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="testi-card mx-4 my-3 text-center p-4">
+            <img src="img/css.png" alt="" class="img-fluid d-inline-block" style="width: 50px; height: 50px; border-radius: 50%;">
+            <blockquote class="blockquote mt-3">CSS</blockquote>
+          </div>
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="testi-card mx-4 my-3 text-center p-4">
+            <img src="img/bootstrap.png" alt="" class="img-fluid d-inline-block" style="width: 50px; height: 50px; border-radius: 50%;">
+            <blockquote class="blockquote mt-3">Bootstrap</blockquote>
+          </div>
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="testi-card mx-4 my-3 text-center p-4">
+            <img src="img/javascrip.png" alt="" class="img-fluid d-inline-block" style="width: 50px; height: 50px; border-radius: 50%;">
+            <blockquote class="blockquote mt-3">JavaScript</blockquote>
+          </div>
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="testi-card mx-4 my-3 text-center p-4">
+            <img src="img/php.png" alt="" class="img-fluid d-inline-block" style="width: 50px; height: 50px; border-radius: 50%;">
+            <blockquote class="blockquote mt-3">PHP</blockquote>
+          </div>
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="testi-card mx-4 my-3 text-center p-4">
+            <img src="img/laravel.png" alt="" class="img-fluid d-inline-block" style="width: 50px; height: 50px; border-radius: 50%;">
+            <blockquote class="blockquote mt-3">Laravel</blockquote>
+          </div>
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="testi-card mx-4 my-3 text-center p-4">
+            <img src="img/mysql.png" alt="" class="img-fluid d-inline-block" style="width: 50px; height: 50px; border-radius: 50%;">
+            <blockquote class="blockquote mt-3">MySQL</blockquote>
+          </div>
+        </div>
+     
     </div>
 
     <!-- Backgorund Education -->
     <div class="container">
-      <h2 data-aos="fade-down" class="title"><span>Backgorund </span>Education</h2>
+      <h2 data-aos="fade-down" class="title"><span>Background </span>Education</h2>
 
        <section class="pendidikan" id="education">
-    <div class="timeline mb-4">
-        <div class="timeline-item" data-aos="fade-down">
-            <div class="timeline-content">
-                <i class="fas fa-school icon"></i>
-                <h3>SMP</h3>
-                <p>SMP Negeri 8 Cimahi.</p>
-                <span class="year">2014 - 2017</span>
+            <div class="timeline mb-4">
+                <div class="timeline-item" data-aos="fade-down">
+                    <div class="timeline-content">
+                        <i class="fas fa-school icon"></i>
+                        <h3>SMP</h3>
+                        <p>SMP Negeri 8 Cimahi.</p>
+                        <span class="year">2014 - 2017</span>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-down">
+                    <div class="timeline-content">
+                        <i class="fas fa-laptop-code icon"></i>
+                        <h3>SMK</h3>
+                        <p>SMK Negeri 3 Cimahi.</p>
+                        <p>Jurusan: Administrasi Perkantoran.</p>
+                        <span class="year">2017 - 2020</span>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-down">
+                    <div class="timeline-content">
+                        <i class="fas fa-graduation-cap icon"></i>
+                        <h3>D4</h3>
+                        <p>Politeknik TEDC Bandung.</p>
+                        <p>Jurusan: Teknik Informatika.</p>
+                        <span class="year">2020 - 2024</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="timeline-item" data-aos="fade-down">
-            <div class="timeline-content">
-                <i class="fas fa-laptop-code icon"></i>
-                <h3>SMK</h3>
-                <p>SMK Negeri 3 Cimahi.</p>
-                <p>Jurusan: Administrasi Perkantoran.</p>
-                <span class="year">2017 - 2020</span>
-            </div>
-        </div>
-        <div class="timeline-item" data-aos="fade-down">
-            <div class="timeline-content">
-                <i class="fas fa-graduation-cap icon"></i>
-                <h3>D4</h3>
-                <p>Politeknik TEDC Bandung.</p>
-                <p>Jurusan: Teknik Informatika.</p>
-                <span class="year">2020 - 2024</span>
-            </div>
-        </div>
+        </section>
     </div>
-</section>
-    </div>
+
     <!-- project section -->
     <div class="container">
-      <h2 data-aos="fade-down" class="title"><span>Our </span>Project</h2>
+      <h2 data-aos="fade-down" class="title"><span>My </span>Project</h2>
 
        <section class="project" id="portfolio">
           <div data-aos="fade-down" class="card-container">
             <div class="card bg-dark text-white">
               <img src="../Portfolio/img/project1.jpg" class="card-img" alt="...">
               <div class="card-img-overlay">
-                <h1 class="card-text">Project 1 Description</h1>
+                <h1 class="card-text">Coffe Shop Project <br> (html,css,js) <br><br> <a href="https://fajar4cil.github.io/Coffe-Shop/"><i class="bi bi-box-arrow-up-right icon-project"></i></a> </i></h1>
               </div>
             </div>
           </div>
@@ -217,7 +249,7 @@
             <div class="card bg-dark text-white">
               <img src="../Portfolio/img/project2.png" class="card-img" alt="...">
               <div class="card-img-overlay">
-                <p class="card-text">Project 2 Description</p>
+                <h1 class="card-text">Wedding Invitation <br> (html,css,js) <br><br> <a href="https://fajar4cil.github.io/wedding_invitation/"><i class="bi bi-box-arrow-up-right icon-project"></i></a> </i></h1>
               </div>
             </div>
           </div>
@@ -225,7 +257,7 @@
             <div class="card bg-dark text-white">
               <img src="../Portfolio/img/project3.png" class="card-img" alt="...">
               <div class="card-img-overlay">
-                <p class="card-text">Project 3 Description</p>
+                <h1 class="card-text">Homepage Ecommerce <br> (html,css,js) <br><br> <a href="https://fajar4cil.github.io/homepage_ecommerce/"><i class="bi bi-box-arrow-up-right icon-project"></i></a> </i></h1>
               </div>
             </div>
           </div>
@@ -234,7 +266,7 @@
             <div class="card bg-dark text-white">
               <img src="../Portfolio/img/project4.png" class="card-img" alt="...">
               <div class="card-img-overlay">
-                <h1 class="card-text">Project 1 Description</h1>
+                <h1 class="card-text">Ecommerce <br> (php native) <br><br> <a href=""><i class="bi bi-box-arrow-up-right icon-project"></i></a> </i></h1>
               </div>
             </div>
           </div>
@@ -242,7 +274,7 @@
             <div class="card bg-dark text-white">
               <img src="../Portfolio/img/landing.png" class="card-img" alt="...">
               <div class="card-img-overlay">
-                <p class="card-text">Project 2 Description</p>
+                <h1 class="card-text">Tugas Akhir <br> (laravel 8) <br><br> <a href=""><i class="bi bi-box-arrow-up-right icon-project"></i></a> </i></h1>
               </div>
             </div>
           </div>
@@ -250,7 +282,7 @@
             <div class="card bg-dark text-white">
               <img src="../Portfolio/img/project5.png" class="card-img" alt="...">
               <div class="card-img-overlay">
-                <p class="card-text">Project 3 Description</p>
+                <h1 class="card-text">Toko Serba <br> (laravel 10) <br><br> <a href=""><i class="bi bi-box-arrow-up-right icon-project"></i></a> </i></h1>
               </div>
             </div>
           </div>
@@ -265,13 +297,10 @@
           <!-- Kolom untuk Peta -->
           <div class="col-md-6 ">
             <div data-aos="fade-right" class="map-container">
-              <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15844.708187761029!2d107.54082009252967!3d-6.869377386717318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e53c005691d1%3A0xf191fe19dd18806d!2sNeka%20Kopi!5e0!3m2!1sid!2sid!4v1682253718313!5m2!1sid!2sid"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  class="map"
-              ></iframe>
+             <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sid!2sid!4v1741250897336!5m2!1sid!2sid!6m8!1m7!1sz6U86wTa8UODWcFUSiz-NA!2m2!1d-6.896072729000474!2d107.5098894844648!3f5.232935680508909!4f3.9700159313583896!5f0.7820865974627469" 
+              width="600" height="450" style="border:0;" allowfullscreen="" 
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
             </div>
           </div>
 
@@ -307,7 +336,7 @@
           <div class="containerfooter">
             <div data-aos="fade-down" class="social-footers">
               <a
-                href="https://www.instagram.com/username"
+                href="https://www.instagram.com/fajara.11"
                 class="social-footer"
                 target="_blank"
               >
@@ -315,7 +344,7 @@
                 <!-- Ikon Instagram -->
               </a>
               <a
-                href="https://www.linkedin.com/in/username"
+                href="https://www.linkedin.com/in/agustianfjr/"
                 class="social-footer"
                 target="_blank"
               >
@@ -330,7 +359,7 @@
                 <i class="fab fa-whatsapp"></i>
                 <!-- Ikon WhatsApp -->
               </a>
-              <a href="mailto:your.email@example.com" class="social-footer">
+              <a href="https://mail.google.com/" class="social-footer">
                 <i class="fas fa-envelope"></i>
                 <!-- Ikon Email -->
               </a>
@@ -352,19 +381,20 @@
       </section>
     </div>
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- slick -->
+    <script src="slick/slick/slick.js"></script>
+    
     <!-- Menambahkan AOS.js -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script src="app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
