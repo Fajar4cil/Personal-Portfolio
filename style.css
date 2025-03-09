@@ -1,5 +1,9 @@
-html {
-  scroll-padding-top: 90px; /* Sesuaikan dengan tinggi navbar */
+html,
+body {
+  scroll-padding-top: 90px;
+  overflow-x: hidden; /* Menyembunyikan scroll horizontal */
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -397,19 +401,11 @@ h3 {
     flex: 1 1 100%;
     max-width: 100%;
   }
-}
 
-/* contact */
-.contacttitle {
-  margin-top: 50px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-}
-
-.contacttitle span {
-  color: #2596be;
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .map-container iframe {
@@ -496,11 +492,4 @@ h3 {
   color: #ecdfcc;
   transform: scale(1.1);
   font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .links {
-    flex-direction: column;
-    align-items: center;
-  }
 }
